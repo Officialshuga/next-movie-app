@@ -1,5 +1,8 @@
 import { SliderButtonProps } from "@/types";
 import { Button } from "@mui/material";
+import { Next, Previous } from "@/utils/icons";
+
+
 const SliderButton: React.FC<SliderButtonProps> = ({ isRight }) => {
   const handleScroll = (event: React.MouseEvent<HTMLButtonElement>) => {
     const parent = event.currentTarget.closest(".scroll-container-parent");

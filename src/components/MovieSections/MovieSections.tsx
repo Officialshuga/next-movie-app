@@ -11,7 +11,7 @@ const MovieSections: React.FC<MovieSectionProps> = ({
   heading,
   endpoint,
   loading,
-  setLoading,
+  setLoading
 }) => {
   const [media, setMedia] = useState<Media[]>([]);
   const [error, setError] = useState<String | null>(null);
@@ -72,7 +72,7 @@ const MovieSections: React.FC<MovieSectionProps> = ({
             sx={{ display: "flex", alignItems: "center", position: "relative" }}
           >
             {isScrolled && <SliderButton isRight={false} />}
-            <Box className="scroll-container" onscroll={handleScroll} sx={{ display: "flex", flexDirection: "row", padding: {xs: "3.2rem 6rem 12.5rem", overflowX: "auto",  overflowY: "hidden", marginTop: "-3rem", marginLeft: "-3rem", "&::-webkit-scrollbar": {display: "none"}}}}>
+            <Box className="scroll-container" onScroll={handleScroll} sx={{ display: "flex", flexDirection: "row", padding: {xs: "3.2rem 6rem 12.5rem", overflowX: "auto",  overflowY: "hidden", marginTop: "-3rem", marginLeft: "-3rem", "&::-webkit-scrollbar": {display: "none"}}}}>
               {media?.filter(item=>item.poster_path !== null && item.backdrop_path !== null).map(
                 (item, index)=>(
                   <Cards key={index} item={item} enableGenres={false}/>
@@ -81,7 +81,7 @@ const MovieSections: React.FC<MovieSectionProps> = ({
             </Box>
           </Box>
         </>
-      )}
+      )}                   
     </Box>
   );
 };

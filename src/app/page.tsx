@@ -93,3 +93,6 @@ const sections: MovieSectionProps[] = [
 ];
 
 export default Home;
+// git remote add origin https://github.com/Officialshuga/next-movie-app.git
+// git branch -M main
+// git push -u origin main

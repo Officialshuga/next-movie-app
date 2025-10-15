@@ -6,10 +6,10 @@ import {
 import {
   IoPlaySharp as Play,
   IoSearch as Search,
-  IoNotifications as Notificatons,
+  IoNotifications as Notifications,
   IoAddSharp as Add,
   IoChevronDown as Down,
-  IoLogoLinkedin as linkedin,
+  IoLogoLinkedin as Linkedin,
   IoLogoTwitter as Twitter,
   IoLogoGithub as Github,
 } from "react-icons/io5";
@@ -18,6 +18,7 @@ import {
   AiOutlineDislike as Dislike,
 } from "react-icons/ai";
 import { GoMute as Mute, GoUnmute as Unmute } from "react-icons/go";
+import { FaAngleRight as Next, FaAngleLeft as Previous } from "react-icons/fa6";
 import {
   MdNoAdultContent as Adult,
   MdHd as HD,
@@ -25,7 +26,7 @@ import {
 } from "react-icons/md";
 import { TbRating12Plus as Rating } from "react-icons/tb";
 import {
-  FaFacebook as FB,
+  FaFacebookF as FB,
   FaInstagram as Instagram,
   FaYoutube as Youtube,
 } from "react-icons/fa";
@@ -33,23 +34,25 @@ import {
 export {
   Info,
   CaretDown,
-  Tick,
   Play,
   Search,
-  Notificatons,
+  Notifications,
   Add,
   Down,
-  linkedin,
-  Twitter,
-  Github,
   Like,
   Dislike,
+  Linkedin,
+  Twitter,
+  Github,
+  Tick,
   Mute,
   Unmute,
+  Next,
+  Previous,
   Adult,
+  Rating,
   HD,
   Close,
-  Rating,
   FB,
   Instagram,
   Youtube,
