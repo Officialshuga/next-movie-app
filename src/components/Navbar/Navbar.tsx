@@ -98,7 +98,7 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page}>
-                  <Typography>
+                  <Typography component="div">
                     <Link
                       href={
                         page === "Home"
